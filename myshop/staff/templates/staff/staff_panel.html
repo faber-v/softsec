@@ -1,0 +1,41 @@
+{% extends "shop/base.html" %}
+{% load static %}
+	
+{% block title %}
+	Orders
+{% endblock %}
+
+{% block content %}
+	<div id = 'main'>
+
+        <div class="order">
+        	<table>
+        	<tr>
+        		<th>First name</th>
+        		<th>Last name</th>
+        		<th>Email</th>
+        		<th>City</th>
+        		<th>Created</th>
+        		<th>Paid</th>
+        	</tr>
+        	{% for order in orders %}
+        	<tr>
+        		<td>{{ order.first_name }}</td>
+        		<td>{{ order.last_name }}</td>
+        		<td>{{ order.email }}</td>
+        		<td>{{ order.city }}</td>
+        		<td>{{ order.created }}</td>
+        		<td>{{ order.paid }}</td>
+        	</tr>
+	        {% endfor %}
+        	</table>
+			<p>
+			{{ order.first_name }} {{ order.last_name }}<br>
+			{{ orderItem.product }}
+			</p>
+        </div>
+
+
+
+	</div>
+{% endblock %}

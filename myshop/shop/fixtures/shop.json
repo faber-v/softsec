@@ -1,0 +1,82 @@
+[
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "books",
+    "slug": "books"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "collectibles",
+    "slug": "collectibles"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "category": 1,
+    "name": "Lightweight Django",
+    "slug": "lightweight-django",
+    "image": "products/2017/11/04/lightweightdjango.jpg",
+    "description": "potom",
+    "price": "1488.00",
+    "stock": 30,
+    "available": true,
+    "created": "2017-11-04T19:01:41.779Z",
+    "updated": "2017-11-04T19:01:41.779Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "category": 1,
+    "name": "Two Scoops of Django",
+    "slug": "two-scoops-django",
+    "image": "products/2017/11/04/twoscoopsofdj.png",
+    "description": "tozhe potom",
+    "price": "123.00",
+    "stock": 33,
+    "available": true,
+    "created": "2017-11-04T19:02:55.624Z",
+    "updated": "2017-11-04T19:02:55.624Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "category": 1,
+    "name": "test1",
+    "slug": "test1",
+    "image": "products/2017/11/04/twoscoopsofdj.png",
+    "description": "tozhe potom",
+    "price": "123.00",
+    "stock": 33,
+    "available": true,
+    "created": "2017-11-04T19:02:55.624Z",
+    "updated": "2017-11-04T19:02:55.624Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "category": 1,
+    "name": "test2",
+    "slug": "test2",
+    "image": "products/2017/11/04/twoscoopsofdj.png",
+    "description": "tozhe potom",
+    "price": "123.00",
+    "stock": 33,
+    "available": true,
+    "created": "2017-11-04T19:02:55.624Z",
+    "updated": "2017-11-04T19:02:55.624Z"
+  }
+}
+]
