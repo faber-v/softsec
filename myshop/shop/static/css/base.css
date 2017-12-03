@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 body { 
     margin:0;
@@ -141,6 +140,17 @@ ul.errorlist {
     float:right;
     padding-top:4px;
 }
+/*
+#subheader ul {
+    list-style: none;
+    padding-top: 4px;
+    float:left;
+ }
+
+#subheader li {
+    display: inline;
+}
+*/
 
 #content {
     padding:0 100px;
@@ -314,3 +324,34 @@ ul.errorlist {
 .recommendations.cart img {
     width:120px;
 }
+
+#subheader2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ececec;
+}
+
+#subheader2 li {
+    float: right;
+}
+
+
+#subheader2 li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#subheader2 li:first-child {
+    padding-right: 0;
+    margin-right: 86px;
+}
+
+/* Change the link color to #111 (black) on hover */
+#subheader2 li a:hover {
+    background-color: white;
+}
+
