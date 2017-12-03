@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="header">
-        <a href="/" class="logo">My shop</a>
+        <a href="/" class="logo">OriginalName's shack</a>
     </div>
     <div id="subheader">
         <div class="cart">
@@ -24,16 +24,19 @@
             {% endwith %}
         </div>
     </div>
+    <div id="subheader2">
+        <ul>
+        {% if user.is_authenticated %}
+            <li><a href="/account/logout" class="cart">logout</a></li>
+            <li><a href="/account/orders/">orders</a></li>
+        {% else %}
+            <li><a href="/account/login" class="cart">login</a></li>
+        {% endif %}
+        </ul>
+    </div> 
     <div id="content">
         {% block content %}
         {% endblock %}
-    </div>
-    <div id="footer">
-        {% if user.is_authenticated %}
-            <i><a href="/account/logout" class="account-btn">logout</a></i>
-        {% else %}
-            <i><a href="/account/login" class="account-btn">login</a></i>
-        {% endif %}
     </div>
 </body>
 </html>
