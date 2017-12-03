@@ -7,6 +7,7 @@ from django.contrib.auth import (
     logout,
     get_user_model,
     )
+from django.contrib.auth.decorators import login_required
 
 from .forms import LoginForm
 from orders.models import Order, OrderItem
@@ -28,7 +29,10 @@ def UserLogout (request):
     logout(request)
     return redirect('/')
 
+@login_required(login_url='/account/login/')
 def ListOrders (request):
     orders = Order.objects.all()
     orderItem = OrderItem.objects.all()
-    return render(request, 'staff/staff_panel.html', {'orders':orders, 'orderItem':orderItem})
+    return render(request, 'staff/staff_panel.html', {'orders':orders,
+                                                      'orderItem':orderItem,
+                                                      })

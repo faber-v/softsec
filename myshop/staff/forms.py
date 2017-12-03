@@ -27,7 +27,3 @@ class LoginForm(forms.Form):
                 raise forms.ValidationError('YOU ARE BANNED')
         return super(LoginForm, self).clean(*args, **kwargs)
 
-class markAsPaid(forms.Form):
-    update = forms.BooleanField(required=False,
-                            initial=False,
-                            widget=forms.HiddenInput)
